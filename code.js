@@ -10,6 +10,6 @@ function helloWorld() {
 
 //sayHello function
 
-function sayHello() {
-	return "Hello";
+function sayHello(input) {
+	return "Hello, " + input + "!";
 };
