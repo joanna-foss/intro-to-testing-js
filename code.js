@@ -11,5 +11,10 @@ function helloWorld() {
 //sayHello function
 
 function sayHello(input) {
+	if (typeof input === 'boolean') {
+		input = "World";
+	} else if (typeof input === 'number') {
+		input = String(input);
+	}
 	return "Hello, " + input + "!";
 };
