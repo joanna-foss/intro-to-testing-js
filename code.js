@@ -18,3 +18,10 @@ function sayHello(input) {
 	}
 	return "Hello, " + input + "!";
 };
+
+function isFive(input) {
+	if (input === isNaN) {
+		return false;
+	} else
+		return input % 5 == 0;
+};

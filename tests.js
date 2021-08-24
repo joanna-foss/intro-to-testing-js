@@ -44,3 +44,27 @@ describe('sayHello', function () {
         expect(sayHello(1)).toBe("Hello, 1!");
     });
 });
+
+describe('isFive', function () {
+    it('should be a defined function', function () {
+        expect(typeof isFive).toBe('function');
+    });
+    it('should return true when input is 5', function () {
+        expect(isFive(5)).toBe(true);
+    });
+    it('should return true when an input is divisible by 5', function () {
+        expect(isFive(20)).toBe(true);
+    });
+    it('should return false when input is not divisible by 5', function () {
+        expect(isFive(3133)).toBe(false);
+    });
+    it('should return false if input is a string', function () {
+        expect(isFive("miami")).toBe(false);
+    });
+    it('should return true if a number string that is divisible by 5 is passed through', function () {
+        expect(isFive("250")).toBe(true);
+    });
+    it('should return false if a number string not divisible by 5 is passed through', function () {
+        expect(isFive("333")).toBe(false);
+    });
+});
