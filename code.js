@@ -32,3 +32,13 @@ function isEven(input) {
 	} else
 		return false;
 };
+
+function isVowel(input) {
+	if (typeof input === "string") {
+		input = input.toLowerCase();
+	};
+	if ((input === "a") || (input === "e") || (input === "i") || (input === "o") || (input === "u")) {
+		return true;
+	} else
+		return false;
+}
