@@ -41,4 +41,8 @@ function isVowel(input) {
 		return true;
 	} else
 		return false;
-}
+};
+
+function add(x, y) {
+	return Number(x) + Number(y);
+};
