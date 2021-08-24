@@ -25,3 +25,10 @@ function isFive(input) {
 	} else
 		return input % 5 == 0;
 };
+
+function isEven(input) {
+	if ((input % 2 == 0) && (typeof input !== 'boolean')) {
+		return true;
+	} else
+		return false;
+};
